@@ -7,7 +7,7 @@ void main() {
 class MablDemoApp extends StatelessWidget {
   const MablDemoApp({Key? key}) : super(key: key);
 
-  @Override
+  @override // O を o に修正
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'mablデモアプリ',
@@ -27,7 +27,7 @@ class MablDemoApp extends StatelessWidget {
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
 
-  @Override
+  @override // O を o に修正
   State<LoginScreen> createState() => _LoginScreenState();
 }
 
@@ -104,7 +104,7 @@ class _LoginScreenState extends State<LoginScreen> {
 class MainAppScreen extends StatefulWidget {
   const MainAppScreen({Key? key}) : super(key: key);
 
-  @Override
+  @override // O を o に修正
   State<MainAppScreen> createState() => _MainAppScreenState();
 }
 
