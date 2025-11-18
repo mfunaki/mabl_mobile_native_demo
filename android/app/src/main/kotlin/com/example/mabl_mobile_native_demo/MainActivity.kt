@@ -1,0 +1,5 @@
+package com.example.mabl_mobile_native_demo
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity : FlutterActivity()
