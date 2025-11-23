@@ -1,0 +1,89 @@
+# デフォルトの挙動 (Gitに判断させる)
+* text=auto
+
+# ---------------------------------------------------
+# Linux/Docker/CI で実行・解析されるファイルは
+# Windows上でも強制的に LF (eol=lf) にする
+# ---------------------------------------------------
+
+# シェルスクリプト (最重要)
+*.sh        text eol=lf
+*.bash      text eol=lf
+*.zsh       text eol=lf
+
+# Docker関連
+Dockerfile  text eol=lf
+Containerfile text eol=lf
+
+# YAMLファイル (Docker Compose, k8s, CI/CD, configs)
+*.yml       text eol=lf
+*.yaml      text eol=lf
+
+# 設定ファイル・コード類
+*.json      text eol=lf
+*.toml      text eol=lf
+*.md        text eol=lf
+*.js        text eol=lf
+*.ts        text eol=lf
+*.py        text eol=lf
+*.dart      text eol=lf
+
+# Android関連
+*.gradle    text eol=lf
+*.properties text eol=lf
+*.xml       text eol=lf
+*.kt        text eol=lf
+*.kts       text eol=lf
+gradlew     text eol=lf
+*.pro       text eol=lf
+
+# iOS関連
+*.pbxproj   text eol=lf
+*.xcconfig  text eol=lf
+*.plist     text eol=lf
+*.storyboard text eol=lf
+*.xib       text eol=lf
+Podfile     text eol=lf
+*.podspec   text eol=lf
+*.swift     text eol=lf
+*.h         text eol=lf
+*.m         text eol=lf
+
+# Flutter/Dart関連
+pubspec.yaml text eol=lf
+pubspec.lock text eol=lf
+*.arb       text eol=lf
+
+# Git設定ファイル
+.gitignore  text eol=lf
+.gitattributes text eol=lf
+.gitmodules text eol=lf
+
+# エディタ設定
+.editorconfig text eol=lf
+*.env       text eol=lf
+*.ini       text eol=lf
+*.txt       text eol=lf
+*.csv       text eol=lf
+
+# Web関連 (FlutterのWeb対応がある場合)
+*.html      text eol=lf
+*.css       text eol=lf
+*.scss      text eol=lf
+*.svg       text eol=lf
+
+# ---------------------------------------------------
+# バイナリファイル (念のため明示)
+# ---------------------------------------------------
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.jar binary
+*.aar binary
+*.so binary
+*.dylib binary
+*.a binary
+*.framework binary
